@@ -1,0 +1,32 @@
+.btn-purple {
+    background-color: #7E57C2;
+}
+
+.btn-purple:hover {
+    background-color: #9e76e2;
+}
+
+.btn-pink {
+    background-color: #E91D64;
+}
+
+.btn-pink:hover {
+    background-color: #ee427e;
+}
+
+.btn-blue {
+    background-color: #2D6EFD;
+}
+
+.btn-blue:hover {
+    background-color: #4982fc;
+}
+
+.card-zoom:hover {
+    top: -4px;
+    transition: all 0.4s ease 0s;
+}
+
+.dark-theme {
+    background-color: #292e33;
+}
