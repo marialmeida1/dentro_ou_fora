@@ -12,19 +12,25 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/image.js') }}" defer></script>
+    <script src="{{ asset('js/modal.js') }}" defer></script>
+
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
 </head>
 
-<body class="dark-theme">
+<body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+        <nav class="navbar navbar-expand-md shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -77,10 +83,12 @@
             </div>
         </nav>
 
-        <main class="py-4" data-bs-theme="dark">
+        <main class="py-4">
             @yield('content')
         </main>
     </div>
+
 </body>
+
 
 </html>

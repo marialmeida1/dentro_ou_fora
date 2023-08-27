@@ -14,13 +14,12 @@ class CriaCandidatoVotacao extends Migration
     public function up()
     {
         Schema::create('candidato_votacao', function (Blueprint $table) {
+            $table->id();
             $table->unsignedBigInteger('votacao_id');
             $table->foreign('votacao_id')->references('id')->on('votacao');
 
             $table->unsignedBigInteger('candidato_id');
             $table->foreign('candidato_id')->references('id')->on('candidato');
-
-            $table->primary(['votacao_id', 'candidato_id'])->unique();
 
             $table->smallInteger('pontos')->deafult(0);
             $table->timestamps();

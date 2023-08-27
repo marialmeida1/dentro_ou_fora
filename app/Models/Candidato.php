@@ -14,6 +14,11 @@ class Candidato extends Model
 
     protected $table = 'candidato';
 
+    protected $fillable = [
+        'nome',
+        'foto',
+    ];
+
     protected $casts = [
         'datahora_inicio' => 'datetime:Y-m-d H:i',
         'datahora_fim' => 'datetime:Y-m-d H:i',

@@ -15,6 +15,10 @@ class Votacao extends Model
 
     protected $table = 'votacao';
 
+    protected $casts = [
+        'publica' => 'boolean',
+    ];
+
     public function usuario(): BelongsTo
     {
         return $this->belongsTo(User::class, 'usuario_id', 'id');
